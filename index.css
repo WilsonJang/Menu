@@ -1,3 +1,145 @@
-body {
-    background-color: aquamarine;
+html,body {
+    background: linear-gradient(90deg, rgb(179, 255, 255), rgb(255, 179, 179));
+    height: 100%;
+    
+  }
+
+
+.title {
+    margin-top: 2rem;
+    display:flex;
+    justify-content: center;
+}
+
+
+  .logo-border {
+    border-color: green;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+    height: 9rem;
+  }
+
+.center {
+  display:flex;
+  justify-content: center;
+}
+
+  .title-space{
+    font-size: 3rem;
+    text-align: center;
+    animation-name: rainbow_animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes rainbow_animation {
+    0% { color: red; }
+    16%{color: orange; }
+  32% { color: yellow; }
+  48% { color: green; }
+  64% { color: blue; }
+  80% { color: indigo; }
+  100% { color: violet; }
+  }
+
+
+  .fade-in{
+    animation: fade-in;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+  }
+
+    @keyframes fadein {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      
+    }
+
+    .move-left{
+      animation: ease-in;
+      animation-name: movetext;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+    }
+  
+      @keyframes movetext {
+          0% {right: 15rem;}
+          100% {right: 0rem;}
+      }
+      
+      .move-in{
+        animation: ease-in;
+        animation-name: movein;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+      }
+    
+        @keyframes movein {
+            0% {left: -5rem;}
+            100% {left: 0rem;}
+        }
+
+.top-container{
+  height: 50%;
+}
+.bottom-container{
+  height: 50%;
+}
+ #top-left {
+   height: 80%;
+   width: 45%;
+   margin: 6rem 0 0 1rem;
+   border-color: red;
+   border-width: 4px;
+   border-style: solid;
+  float: left;
+ }
+
+ #top-right {
+  height: 80%;
+  width: 45%;
+  margin: 6rem 1rem 0 0;
+  border-color: red;
+  border-width: 4px;
+  border-style: solid;
+  float: right;
+}
+
+#bottom-left {
+  height: 80%;
+  width: 45%;
+  margin: 1rem 0 0 1rem;
+  border-color: red;
+  border-width: 4px;
+  border-style: solid;
+ float: left;
+}
+
+#bottom-right {
+ height: 80%;
+ width: 45%;
+ margin: 1rem 1rem 0 0;
+ border-color: red;
+ border-width: 4px;
+ border-style: solid;
+ float: right;
+}
+
+
+.food-picture {
+  width: 50%;
+  height: 80%;
+  margin: 2rem;
+  position: relative;
+  border-color: pink;
+  border-width: 4px;
+  border-style: solid;
+  float: left;
+}
+
+.text-container{
+height: 100%;
+width: 100%;
+
 }
