@@ -61,13 +61,16 @@ html,body {
       animation-name: movetext;
       animation-duration: 2s;
       animation-iteration-count: 1;
+      position: relative;
     }
   
       @keyframes movetext {
-          0% {right: 15rem;}
-          100% {right: 0rem;}
+          0% {left: 5rem;}
+          100% {left: 0rem;}
       }
       
+
+
       .move-in{
         animation: ease-in;
         animation-name: movein;
